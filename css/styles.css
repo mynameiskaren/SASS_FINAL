@@ -1,0 +1,146 @@
+/******************************************************* */
+/******      BODY                                 ****** */
+/******************************************************* */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  background: url("../images/bg.gif") repeat-x; }
+
+/******************************************************* */
+/******      MAIN - FIGURE & NAV                  ****** */
+/******************************************************* */
+main {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+figure {
+  width: 400px;
+  height: 190px;
+  float: left;
+  background: url("../images/logo.png") no-repeat 0 50px; }
+
+nav {
+  width: 540px;
+  height: 190px;
+  float: left;
+  text-align: right; }
+  nav ul {
+    list-style-type: none;
+    margin-top: 95px; }
+    nav ul li {
+      display: inline;
+      font-size: 0.8em;
+      margin-right: 10px; }
+      nav ul li a {
+        color: #E65C43;
+        text-decoration: none;
+        letter-spacing: -0.01em; }
+        nav ul li a:hover {
+          color: #FFF; }
+
+/******************************************************* */
+/******      HEADER - HEADERS, IMG, #HEADLINES    ****** */
+/******************************************************* */
+header {
+  width: inherit;
+  padding-top: 40px;
+  clear: both;
+  text-align: center; }
+  header img {
+    max-width: 100%;
+    height: auto; }
+  header h1 {
+    font-weight: 100;
+    font-size: 4em;
+    color: #E65C43;
+    line-height: 0; }
+  header h2 {
+    font-weight: 900;
+    font-size: 2.5em;
+    color: #FFF;
+    line-height: 0;
+    margin-bottom: 70px; }
+  header h3 {
+    font-weight: 400;
+    font-size: 2em;
+    color: #666;
+    line-height: 0;
+    margin-bottom: 50px; }
+
+#headline {
+  width: 100%;
+  height: 130px;
+  background: #F25C43;
+  text-align: center;
+  margin: 0 auto; }
+  #headline h1 {
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #FFF;
+    padding-top: 50px; }
+
+/******************************************************* */
+/******      #CONTENT - PRODUCTS & TESTIMONIALS   ****** */
+/******************************************************* */
+#content {
+  width: 940px;
+  margin: 20px auto; }
+  #content h3 {
+    font-weight: 400;
+    font-size: 2em;
+    color: #666; }
+  #content #products {
+    width: 460px;
+    float: left; }
+    #content #products img {
+      float: left;
+      margin-right: 20px; }
+    #content #products article {
+      margin-bottom: 40px; }
+    #content #products h4 {
+      line-height: 1em; }
+  #content #testimonials {
+    width: 460px;
+    float: right; }
+
+.greybar {
+  width: 100%;
+  height: 90px;
+  padding-top: 30px;
+  background: whitesmoke;
+  clear: both; }
+
+/******************************************************* */
+/******      FOOTER - FOOTER & SOCIAL MEDIA       ****** */
+/******************************************************* */
+footer {
+  width: 100%;
+  height: 120px;
+  padding-top: 50px;
+  background: #30353D;
+  text-align: center;
+  color: #FFF; }
+
+.social-media {
+  margin: 0 auto;
+  width: 165px; }
+  .social-media a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px; }
+  .social-media div {
+    float: left;
+    margin-right: 5px; }
+    .social-media div.one {
+      background: url("../images/social-media.png") 0px 0; }
+    .social-media div.two {
+      background: url("../images/social-media.png") -38px 0; }
+    .social-media div.three {
+      background: url("../images/social-media.png") -76px 0; }
+    .social-media div.four {
+      background: url("../images/social-media.png") -114px 0; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,106 @@
+/********************************************************/
+/******      BODY                                 *******/
+/********************************************************/
+body
+	font-family: 'Roboto', sans-serif
+	font-size: 1em
+	line-height: 2em
+	@include bg('bg.gif', repeat-x)
+
+
+/********************************************************/
+/******      MAIN - FIGURE & NAV                  *******/
+/********************************************************/
+main
+	width: 940px
+	margin: 0 auto
+	padding: 0 10px
+
+figure
+	@include fig()
+
+nav
+	@include wHetc(540px, 190px, left, null)
+	text-align: right
+	ul
+		list-style-type: none
+		margin-top: 95px
+		li
+			display: inline
+			font-size: 0.8em
+			margin-right: 10px
+			a
+				color: $redText
+				text-decoration: none
+				letter-spacing: -0.01em
+				&:hover
+					color: $white
+
+
+/********************************************************/
+/******      HEADER - HEADERS, IMG, #HEADLINES    *******/
+/********************************************************/
+header
+	@include wHetc(inherit, null, null, 40px)
+	clear: both
+	text-align: center
+	img
+		max-width: 100%
+		height: auto
+	@include hs()
+
+#headline
+	@include wHetc(100%, 130px, null, null)
+	background: $headL
+	text-align: center
+	margin: 0 auto
+	h1
+		@include setH(100, 2.5em, $white, null, null, 50px)	
+
+    
+/********************************************************/
+/******      #CONTENT - PRODUCTS & TESTIMONIALS   *******/
+/********************************************************/
+#content
+	width: 940px
+	margin: 20px auto
+	h3
+		@include setH(400, 2em, $grey, null, null, null)
+	#products
+		@include wHetc(460px, null, left, null)
+		img
+			float: left
+			margin-right: 20px
+		article
+			margin-bottom: 40px
+		h4
+			line-height: 1em
+	#testimonials
+		@include wHetc(460px, null, right, null)
+
+.greybar
+	@include wHetc(100%, 90px, null, 30px)
+	background: darken($white, 4%)//#F5F6F6
+	clear: both
+
+
+/********************************************************/
+/******      FOOTER - FOOTER & SOCIAL MEDIA       *******/
+/********************************************************/
+footer
+	@include wHetc(100%, 120px, null, 50px)
+	background: $blkbg
+	text-align: center
+	color: $white
+
+.social-media
+	margin: 0 auto
+	width: 165px
+	a
+		display: block
+		@include wHetc(36px, 36px, null, null)
+		text-indent: -9999px
+	div
+		float: left
+		margin-right: 5px
+		@include icon()

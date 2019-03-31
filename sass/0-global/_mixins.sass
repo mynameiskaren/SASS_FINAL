@@ -1,0 +1,55 @@
+// MIXINS
+
+//bg - Sets background images and background properties
+@mixin bg($loc, $rep, $color: null, $x: null, $y: null)
+	background: $color url('../images/' + $loc) $rep $x $y
+
+
+//setH - Sets Header properties
+@mixin setH($fWeight, $fSize, $color: null, $mBotm: null, $lH: null, $pT: null)
+	font-weight: $fWeight
+	font-size: $fSize
+	color: $color
+	line-height: $lH
+	margin-bottom: $mBotm
+	padding-top: $pT
+
+
+//wHetc - Width, Height, ETC. - Sets width, height, floating, and patting
+@mixin wHetc($w: null, $h: null, $f: null, $pT: null)
+	width: $w
+	height: $h
+	float: $f
+	padding-top: $pT
+
+
+//Figure - Sets background and Width/Height/Etc.
+@mixin fig()
+	@include wHetc(400px, 190px, left, null)
+	@include bg('logo.png', no-repeat, null, 0, 50px)
+
+
+//Header Selectors - Sets H1, H2, H3 and uses setH mixin
+@mixin hs()
+	h1
+		@include setH(100, 4em, $redText, null, 0, null)
+	h2
+		@include setH(900, 2.5em, $white, 70px, 0, null)
+	h3
+		@include setH(400, 2em, $grey, 50px, 0, null)
+
+
+//Footer - Social Media
+@mixin social($x, $y)
+	background: url('../images/social-media.png') $x $y
+
+//Footer - Social Media Icons
+@mixin icon()
+	&.one
+		@include social(nx(0), 0)
+	&.two
+		@include social(nx(1), 0)
+	&.three
+		@include social(nx(2), 0)
+	&.four
+		@include social(nx(3), 0)
